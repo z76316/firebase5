@@ -1,0 +1,46 @@
+.thankyou-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.thankyou-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 90%;
+	max-width: 1000px;
+	min-height: 100px;
+	min-width: 100px;
+	line-height: 1.5;
+	text-align: center;
+	margin: 50px;
+	padding: 30px;
+	border: 5px solid black;
+}
+
+.thankyou-area h1 {
+	font-weight: bold;
+	font-size: 48px;
+}
+
+.thankyou-area h2 {
+	display: flex;
+	flex-wrap: wrap;
+	width: auto;
+	font-weight: bold;
+	font-size: 36px;
+	margin-top: 8px;
+	border-bottom: 2px solid;
+}
+
+.thankyou-area p {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0 auto;
+	color: red;
+}

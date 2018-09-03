@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- must -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Firebase Team Web</title>
+		<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+		
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124052298-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-124052298-1');
+		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="header-left">
+				<a href="/"><img src="img/btn-logo-01.png" srcset="img/btn-logo-01@2x.png 2x,
+				img/btn-logo-01@3x.png 3x" class="btn_logo01" /></a>
+				<img class="search-icon2 cursor" src="img/search.png" />
+				<img src="img/btn-search-02-normal.svg" class="search-icon3">
+
+				<span id="menu">
+					<ul>
+						<li class="menu-but cursor" id="women-button">女裝</li>
+						<li class="menu-separ">|</li>
+						<li class="menu-but2 cursor" id="men-button">男裝</li>
+						<li class="menu-separ">|</li>
+						<li class="menu-but2 cursor" id="accessories-button">配件</li>
+					</ul>
+				</span>
+			</div>
+			<span class="header-right">
+				<span class="header-right-input">
+				  <input type="text" name="search" class="input">
+				  <img class="search-icon cursor" src="img/search.png" />
+				</span>
+				<span class="header-right-icon">
+					<span class="cart">
+						<img src="img/cart.png" class="btn_shopping-cart01_add cursor" />
+						<span class="cart-num cursor">0</span>
+					</span>
+					<!-- <img src="img/btn-shopping-cart-01-add.png" srcset="img/btn-shopping-cart-01-add@2x.png 2x,
+             img/btn-shopping-cart-01-add@3x.png 3x" class="btn_shopping-cart01_add cursor" /> -->
+					<img src="img/btn-member-01-normal.png" srcset="img/btn-member-01-normal@2x.png 2x,
+             img/btn-member-01-normal@3x.png 3x" class="btn_member01_normal cursor">
+				</span>
+			</span>
+			<div class="banner-bar">
+				<div class="mobile-menu">
+					<ul>
+						<li class="menu-but cursor" id="women-button-mobile">女裝</li>
+						<li class="menu-separ">|</li>
+						<li class="menu-but2 cursor" id="men-button-mobile">男裝</li>
+						<li class="menu-separ">|</li>
+						<li class="menu-but3 cursor" id="accessories-button-mobile">配件</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="flex-col">
+			<span class="header-right-input">
+				<input type="text" name="member_name" class="input">
+			</span>
+			<span class="header-right-input">
+				<input type="text" name="email" class="input">
+			</span>
+			<span class="header-right-input">
+				<input type="text" name="password" class="input">
+			</span>
+		</section>
+		<footer class="footer">
+			<div class="footer-box">
+				<span class="footer-menu-icons">
+					<span class="footer-menu">
+						<span class="footer-menu-p1">
+							<span class="footer-menu-but cursor">關於 Stylish</span>
+							<span class="footer-menu-but2 cursor">服務條款</span>
+							<span class="footer-menu-but2 cursor">隱私政策</span>
+						</span>
+						<span class="footer-menu-p2">
+							<span class="footer-menu-but2 cursor">聯絡我們</span>
+							<span class="footer-menu-but2 cursor">FAQ</span>
+						</span>
+					</span>
+					<span class="footer-icons">
+						<img src="img/btn-line-01-normal.png" srcset="img/btn-line-01-normal@2x.png 2x,
+		             img/btn-line-01-normal@3x.png 3x" class="line01 cursor">
+		         <img src="img/btn-twitter-01-normal.png" srcset="img/btn-twitter-01-normal@2x.png 2x,
+		             img/btn-twitter-01-normal@3x.png 3x" class="twitter01 cursor">
+		         <img src="img/btn-facebook-01-normal.png" srcset="img/btn-facebook-01-normal@2x.png 2x,
+		             img/btn-facebook-01-normal@3x.png 3x" class="facebook01 cursor">
+	     		</span>
+     		</span>
+     		<span class="copyright">&copy;2018. All rights reserved.</span>
+			</div>
+			<div class="float-bar">
+				<ul>
+					<li class="li-left cursor">
+						<span class="float-cart">
+							<img src="img/btn-shopping-cart-02-normal.svg" class="icon-shopping-cart" />購物車
+							<span class="cart-num2">0</span>
+						</span>
+					</li>
+					<li class="li-right cursor">
+						<img src="img/btn-member-02-normal.svg" class="icon-member" />會員
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<div class="stepping"></div>
+
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/loading.css">
+
+		<!-- connect API -->
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script src="firebase_init.js"></script>
+
+		
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyD7f_C2pv9HhDLnKevIIxJL3y4GMurvYaY",
+		    authDomain: "stylish-6a636.firebaseapp.com",
+		    databaseURL: "https://stylish-6a636.firebaseio.com",
+		    projectId: "stylish-6a636",
+		    storageBucket: "",
+		    messagingSenderId: "746489524699"
+		  };
+		  firebase.initializeApp(config);
+
+		  // Get a reference to the database service
+  		var database = firebase.database();
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-storage.js"></script>
+		<script src="header_footer.js"></script>
+		<script src="fb_js_SDK.js"></script>
+		<script src="connect.js"></script>
+		<script src="loading.js"></script>
+	</body>
+</html>
