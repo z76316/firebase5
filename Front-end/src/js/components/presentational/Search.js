@@ -22,6 +22,7 @@ const Search = (props) => {
 				<div className="friend_id">ID of hey@gmail.com: {props.searchFriendId}</div>
 				<button 
 					type='button'
+					onClick={ () => props.handleAddFriend() }
 				>Add Friend Request</button>
 			</div>
 		</div>
@@ -31,7 +32,8 @@ const Search = (props) => {
 Search.propTypes = { 
 	handleSearchFriendEmail: PropTypes.func,
 	searchFriendId: PropTypes.any,
-	handleSearchFriendButton: PropTypes.func
+	handleSearchFriendButton: PropTypes.func,
+	handleAddFriend: PropTypes.func
 }; 
 
 export default Search;

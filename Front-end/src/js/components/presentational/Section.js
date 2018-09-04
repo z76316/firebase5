@@ -7,7 +7,8 @@ import FriendList from './FriendList';
 import PostArticle from './PostArticle';
 import Search from './Search';
 import CurrUserData from './CurrUserData';
-
+import CheckFriendList from './CheckFriendList';
+import SearchArticle from './SearchArticle';
 
 const Section = (props) => {
 	return(
@@ -30,12 +31,6 @@ const Section = (props) => {
 				/>
 				<Route 
 					exact path="/" 
-					render={() => <FriendList 
-						friendEmailArray={props.friendEmailArray}
-					/>}
-				/>
-				<Route 
-					exact path="/" 
 					render={() => <PostArticle 
 						handleArticleTitle={props.handleArticleTitle}
 						handleArticleContent={props.handleArticleContent}
@@ -49,6 +44,23 @@ const Section = (props) => {
 						handleSearchFriendEmail={props.handleSearchFriendEmail}
 						searchFriendId={props.searchFriendId}
 						handleSearchFriendButton={props.handleSearchFriendButton}
+						handleAddFriend={props.handleAddFriend}
+					/>}
+				/>
+				<Route 
+					path="/search" 
+					render={() => <CheckFriendList 
+						futureFriend={props.futureFriend}
+						handleFriendRequest={props.handleFriendRequest}
+						handleUnfriend={props.handleUnfriend}
+					/>}
+				/>
+				<Route 
+					path="/search" 
+					render={() => <SearchArticle 
+						handleAuthorInput={props.handleAuthorInput}
+						handleTagInput={props.handleTagInput}
+						handleSearchArticle={props.handleSearchArticle}
 					/>}
 				/>
 
@@ -70,7 +82,14 @@ Section.propTypes = {
 	handleSearchFriendEmail: PropTypes.func,
 	searchFriendId: PropTypes.any,
 	handleSearchFriendButton: PropTypes.func,
-	friendEmailArray: PropTypes.any
+	friendEmailArray: PropTypes.any,
+	handleAddFriend: PropTypes.func,
+	futureFriend: PropTypes.any,
+	handleFriendRequest: PropTypes.func,
+	handleUnfriend: PropTypes.func,
+	handleAuthorInput: PropTypes.func,
+	handleTagInput: PropTypes.func,
+	handleSearchArticle: PropTypes.func
 }; 
 
 export default Section;
