@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+}
+ul{
+	list-style: none;
+	padding:0;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/*-----------------------html and body element-----------------------*/
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/*-----------------------header-----------------------*/
+header {
+	height: 10%;
+	background-color: black;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.header_button {
+	cursor: pointer;
+	font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  padding: 50px 10px;
+}
+
+
+/*-----------------------section-----------------------*/
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.log_in_title, .search_friend_title {
+	font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  color: #3f3a3a;
+  padding: 20px 0;
+}
+
+.log_in_input_area, .search_friend_input_area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user_data_container {
+	padding: 10px 0;
+}
+
+.user_data_name, .user_data_email {
+	font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #3f3a3a;
+  padding: 10px 0;
+}
+
+.friend_list_area {
+
+}
+
+.friend_list_title {
+	font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #3f3a3a;
+  padding: 10px 0;
+}
+
+.post_article_container {
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.input_article_title {
+	width: 40%;
+}
+
+.input_article_content {
+	width: 40%;
+	padding: 10px 0; 
+	/*line-height: 28px;*/
+}
+
+.article_tag_select {
+	width: 40%;
+	margin-top: 10px; 
+}
+
+.post_article_button {
+	width: 40%;
+	margin-top: 10px;
+}
+
+.input_user_name, .input_user_email {
+	width: 40%;
+}
+
+.input_friend_email {
+	width: 40%;
+}
+
+.friend_id, .friend_name {
+	font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #3f3a3a;
+  padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
